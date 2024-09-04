@@ -29,13 +29,38 @@ nav{
 
 form{
     width: 400px;
-    height: 400px;
+    height: 300px;
     justify-content: center;
-    border: 1px solid darkolivegreen;
-    border-radius: 30px;
-    padding-top:150px;
-    padding-bottom:100px
+    border: 2px solid brown;
+    border-radius: 50px;
+    padding-top:50px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 
+#newPlant{
+    width: 210px;
+    border-radius: 10px;
+    margin:3px;
+}
+#newGenus{
+    width: 250px;
+    border-radius: 10px;
+    margin:3px;
+}
+#newPrice{
+    width: 265px;
+    border-radius: 10px;
+    margin:3px;
+}
+#submitBtn{
+    border-radius: 10px;
+    margin: 5px;
+}
+#submitBtn:hover{
+    background-color: #dbb5b5;
 }
 a {
     font-family: cursive,Arial, Helvetica, sans-serif;
