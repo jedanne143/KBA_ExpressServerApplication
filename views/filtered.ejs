@@ -1,0 +1,10 @@
+<%- include('partials/head') %>
+        <h1>List of <%= genus_ %> Plants </h1>
+
+    <ol>
+        <% for (let p of filtered) { %>
+         <li>  <%= p.Genus %> - <%= p.Plant %> </li>
+        <% } %>
+    </ol>
+    </body>
+</html>

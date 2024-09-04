@@ -35,12 +35,23 @@ app.get('/home' , (req, res) => {
 app.get('/new' , (req, res) => {
     res.render("newplant")
 }) 
+app.post('/new' , (req, res) => {
+    const {Plant , Genus} = req.body
+    plantList.push({Plant , Genus})
+    res.redirect('/plants')
+})
 app.get('/plants' , (req, res) => {
     res.render("index" , {plantList})
 }) 
 app.get('/plants/:genus' , (req,res) => {
     const {genus} = req.params
-    res.send(`<h2>You are browsing ${genus} plants`)
+    const genus_ = genus.toLowerCase()
+    const filtered = plantList.filter( p => {return p.Genus.toLowerCase() === genus_})
+    if (filtered.length === 0){
+        res.status(406).send(`No match found for the Genus you selected`)
+    }else {
+        res.render("filtered" , {genus_ , filtered })
+    }
 })
 app.get("*", (req, res) => {
     res.status(404).send("Path doesn't exist")
