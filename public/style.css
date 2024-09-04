@@ -1,0 +1,49 @@
+main{
+    background-color: #dcdabc;
+    color: darkolivegreen;
+    justify-content: center;
+    text-align: center;
+    padding-top:30px;
+    padding-bottom:30px;
+    width:100%;
+    height:100%;
+}
+#plantwall{
+    border-radius: 20px;
+    width: 700px;
+    height:auto;
+}
+#logo{
+    width: 100px;
+    margin-left:5px;
+    margin-right:5px;
+    border-radius: 10px;
+}
+nav{
+    background-color:white;
+    opacity: 0.8;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 55px;
+}
+
+form{
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    border: 1px solid darkolivegreen;
+    border-radius: 30px;
+    padding-top:150px;
+    padding-bottom:100px
+
+}
+a {
+    font-family: cursive,Arial, Helvetica, sans-serif;
+}
+a:hover{
+    font-weight: bold;
+}
+#greeting{
+    font-family: cursive, Arial, Helvetica, sans-serif;
+}
+

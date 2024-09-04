@@ -1,0 +1,25 @@
+<%- include('partials/head') %>
+            <form action = "/plants" method="post">
+                <h4>New Plant Entry</h4>
+                <label for ="newPlant">Plant Name:</label>
+                <input type="text" id = "newPlant" name="newPlant" required>
+                <br>
+                <label for ="newGenus">Genus:</label>
+                <input type="text" id = "newGenus" name="newGenus" required>
+                <br>
+                <label for ="newPrice">Price:</label>
+                <input 
+                type="text" 
+                id = "newPrice" 
+                name="newPrice" 
+                pattern ="^\$\d+(\.\d{2})?$" 
+                required 
+                placeholder ="$">
+                <br>
+                <button>Submit</button>
+            </form>
+            <a href="/home">Back to Plants Collection</a>
+        </main>
+
+    </body>
+</html>
