@@ -1,20 +1,11 @@
 <%- include('partials/head') %>
-            <form action = "/plants" method="post">
+            <form action = "localhost:5000/new" method="post">
                 <h4>New Plant Entry</h4>
-                <label for ="newPlant">Plant Name:</label>
-                <input type="text" id = "newPlant" name="newPlant" required>
+                <label for ="newPlant">Plant:</label>
+                <input type="text" id = "newPlant" name="Plant" required>
                 <br>
                 <label for ="newGenus">Genus:</label>
-                <input type="text" id = "newGenus" name="newGenus" required>
-                <br>
-                <label for ="newPrice">Price:</label>
-                <input 
-                type="number" 
-                id = "newPrice" 
-                name="newPrice" 
-                pattern ="\d+(\.\d{2})?$" 
-                required 
-                placeholder ="$ Input numbers only">
+                <input type="text" id = "newGenus" name="Genus" required>
                 <br>
                 <button id="submitBtn" type="submit">Submit</button>
             </form>
