@@ -7,6 +7,8 @@ const PORT = 5000
 // app.use(express.json())
 app.set("view engine" , "ejs")
 app.set('views' , path.join(__dirname , 'views'))
+
+//Middleware
 app.use(express.static(path.join(__dirname , 'public')))
 
 
@@ -34,7 +36,7 @@ const  plants = [
 ]
 // ROUTES
 app.get('/' , (req, res) => {
-    res.send("<h2>You are in the root</h2>")
+    res.send("<h2>You are in the root directory</h2>")
 }) 
 app.get('/home' , (req, res) => {
     res.render("homepage")
@@ -45,7 +47,11 @@ app.get('/new' , (req, res) => {
 app.get('/plants' , (req, res) => {
     res.render("index")
 }) 
-app.get("*", (reg, res) => {
+app.get('/r/:subreddit' , (req,res) => {
+    const {subreddit} = req.params
+    res.send(`<h2>You are browsing the ${subreddit} subreddit`)
+})
+app.get("*", (req, res) => {
     res.status(404).send("Path doesn't exist")
 })
 

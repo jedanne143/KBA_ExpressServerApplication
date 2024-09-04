@@ -9,12 +9,12 @@
                 <br>
                 <label for ="newPrice">Price:</label>
                 <input 
-                type="text" 
+                type="number" 
                 id = "newPrice" 
                 name="newPrice" 
-                pattern ="^\$\d+(\.\d{2})?$" 
+                pattern ="\d+(\.\d{2})?$" 
                 required 
-                placeholder ="$">
+                placeholder ="$ Input numbers only">
                 <br>
                 <button id="submitBtn" type="submit">Submit</button>
             </form>
