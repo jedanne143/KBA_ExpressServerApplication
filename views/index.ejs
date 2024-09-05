@@ -1,9 +1,11 @@
 <%- include('partials/head') %>
+
         <h1>List of Available Plants </h1>
 
     <ol>
-        <% for (let p of plantList) { %>
-         <li>  <%= p.Genus %> - <%= p.Plant %> </li>
+        <% for (let p in plantList) { %>
+         <li>  <%= plantList[p].Genus %> - <%= plantList[p].Plant %> <a href="/delete/<%= p %>"> <button class="deleteBtn" value="<%= p %>"> x</button> </a> </li>
+         
         <% } %>
     </ol>
     </main>

@@ -28,16 +28,16 @@ nav{
 }
 
 form{
-    width: 400px;
-    height: 300px;
+    width: 450px;
+    height: 400px;
     justify-content: center;
-    border: 2px solid brown;
+    border: 2px solid #ca8787;
     border-radius: 50px;
-    padding-top:50px;
+    padding-top:30px;
     margin-left:auto;
     margin-right: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 150px;
 }
 
 #newPlant{
@@ -72,3 +72,20 @@ a:hover{
     font-family: cursive, Arial, Helvetica, sans-serif;
 }
 
+#deleteInput{
+    border-radius: 10px;
+}
+
+.deleteBtn{
+    border-radius: 50%;
+}
+
+.deleteBtn:hover{
+    border-radius: 10px;
+    background-color: pink;
+}
+#imageForm{
+    width:270px;
+    height:auto;
+    border-radius: 10px;
+}
